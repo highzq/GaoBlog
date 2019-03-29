@@ -2,6 +2,8 @@
 title: forEach兼容写法
 date: 2018-07-25 15:51:43
 tags: javaScript
+description:
+categories: 技术
 ---
 
 最近写代码写到循环的时候没有多想就直接用了forEach，最后测试在IE的环境下测出了不兼容，为了不改动代码就打算定义一个 Array.prototype.forEach。

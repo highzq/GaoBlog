@@ -10,6 +10,14 @@ author: Gao
 language: zh-CN
 timezone:
 
+social:
+  GitHub: https://github.com/XuQuan-nikkkki || github
+  E-Mail: mailto:xuquan1225@hotmail.com || envelope
+  #Google: https://plus.google.com/yourname || google
+  #Twitter: https://twitter.com/yourname || twitter
+  #FB Page: https://www.facebook.com/yourname || facebook
+
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
