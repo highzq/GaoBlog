@@ -2,7 +2,6 @@
 title: forEach兼容写法
 date: 2018-07-25 15:51:43
 tags: javaScript
-description:
 categories: 技术
 ---
 
