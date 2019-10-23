@@ -3,4 +3,7 @@
 node_modules/
  
 npm-debug.log
-themes/aero-dual
+debug.log
+/public
+debug.log
+debug.log
