@@ -19,6 +19,13 @@ gulp.task("clean", () => {
   });
 
 /**
+ * 清空压缩包
+ */
+gulp.task("cleanPackage", () => {
+    return del(["./public.zip"]);
+  });  
+
+/**
  * 执行build打包命令
  */
 gulp.task("build", shell.task("npm run build"));
@@ -70,7 +77,8 @@ gulp.task("unzip", () => {
     return gulpSSH.shell([
         "cd /home/GaoBlog/",
         "unzip public.zip",
-        "service nginx restart"
+        "service nginx restart",
+        "rm public.zip"
     ]);
 });
 
@@ -85,6 +93,7 @@ gulp.task("deploy_dev", done => {
         "build",
         "zip",
         "upload",
-        "unzip"
+        "unzip",
+        "cleanPackage"
     )(done);
 });
