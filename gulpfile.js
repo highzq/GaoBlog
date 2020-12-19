@@ -87,7 +87,6 @@ gulp.task("unzip", () => {
  * 清空dist目录 -> build -> 压缩 -> 清空站点文件夹 -> 上传 -> 解压 -> 重启nginx
  */
 gulp.task("deploy_dev", done => {
-    console.log(1111)
     gulpSequence(
         "clean",
         "build",
