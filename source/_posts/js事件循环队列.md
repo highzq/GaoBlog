@@ -33,7 +33,7 @@ new Promise(function(resolve){
 /*
 1. 首先执行同步代码 输出：1
 
-2. 遇到setTimeout，这个属于宏任务，先不执行放入任务队列
+2. 遇到setTimeout，这个属于宏任务，先不执行，放入任务队列
 3. Promise是立刻执行 输出：3
 4. then是微任务，也放入队列
 5. 开始执行任务队列中的代码，此时队列中有两个任务一个宏任务，一个微任务，结合上面的先微后宏，
@@ -47,14 +47,14 @@ new Promise(function(resolve){
 // ie11
 setTimeout(function () {console.log(1)});
 Promise.resolve().then(function () {
-  console.log(2);
+console.log(2);
 });
 // 输出结果为 2 1
 
 // ie10
 setTimeout(function () {console.log(1)});
 Promise.resolve().then(function () {
-  console.log(2);
+console.log(2);
 });
 // 输出结果为 1 2
 ```
